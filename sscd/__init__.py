@@ -6,15 +6,15 @@
 
 from pathlib import Path
 
-from classy_vision.generic.registry_utils import import_all_modules
-
-FILE_ROOT = Path(__file__).parent
-
-
-def import_subdir(name):
-    path = Path(FILE_ROOT, name)
-    import_all_modules(path, f"sscd.{name}")
-
-
-# Automatically import any Python files in selected directories.
-import_subdir("transforms")
+# from classy_vision.generic.registry_utils import import_all_modules
+#
+# FILE_ROOT = Path(__file__).parent
+#
+#
+# def import_subdir(name):
+#     path = Path(FILE_ROOT, name)
+#     import_all_modules(path, f"sscd.{name}")
+#
+#
+# # Automatically import any Python files in selected directories.
+# import_subdir("transforms")
